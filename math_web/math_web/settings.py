@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'math_web.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'math_club',
+        'USER': 'root',
+        'PASSWORD': 'lilin123',
+        'HOST': 'localhost',
+        'PORT': '3306',
     }
 }
 
@@ -105,7 +109,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 
