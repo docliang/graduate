@@ -37,6 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #我的应用
+    'user',
+    'main',
+    #第三方应用
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +127,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#django-bootstrap3的设置
+BOOTSTRAP3 = {
+    'include_jquery':True,
+}
