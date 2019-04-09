@@ -38,8 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     #我的应用
-    'user',
+    'users',
     'main',
+    'note',
     #第三方应用
     'bootstrap3',
 ]
@@ -59,7 +60,7 @@ ROOT_URLCONF = 'math_web.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -127,7 +128,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
-
+STATICFILES_DIRS =[
+    os.path.join(BASE_DIR,'static'),
+]
 
 #django-bootstrap3的设置
 BOOTSTRAP3 = {

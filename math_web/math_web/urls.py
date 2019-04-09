@@ -17,6 +17,8 @@ from django.conf.urls import url,include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'^',include('main.urls',namespace='main')),
+    url(r'^admin/', admin.site.urls),#后台
+    url(r'^',include('main.urls',namespace='main')),#主页面
+    url(r'^note',include('note.urls',namespace='note')),#笔记
+    # url(r'^users',include('users.urls',namespace='users')),#用户
 ]
