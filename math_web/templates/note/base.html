@@ -3,9 +3,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Learning Log</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Learning Log</title>
     {% bootstrap_css %}
     {% bootstrap_javascript %}
 </head>
@@ -19,22 +19,20 @@
               data-toggle="collapse" data-target="#navbar"
               aria-expanded="false" aria-controls="navbar"  >
           </button>
-          <a class="navbar-brand" href="{% url 'note:index' %}">Home</a>
+          <a class="navbar-brand" href="{% url 'note:index' %}">Note</a>
         </div>
 
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="{% url 'note:topics' %}">Topic</a><li>
+            {% if user.is_authenticated %}  
+              <li><a href="{% url 'note:topics' %}">主题</a><li>
+            {% else %}
+              <li><a href="{% url 'users:login' %}"></a></li>  
+            {% endif %}
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            {% if user.is_authenticated %}
-              <li><a>你好,{{ user.username }}.</a></li>
-              <li><a href="{%  url 'users:logout' %}">退出</a></li>
-            {% else %}
-              <li><a href="{% url 'users:register' %}">注册</a></li>
-              <li><a href="{% url 'users:login' %}">登陆</a></li>
-            {% endif %}
+              <li><a href="{% url "main:home" %}"><span class="glyphicon glyphicon-home"></span></a></li>
           </ul>
         </div>
 

@@ -20,5 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),#后台
     url(r'^',include('main.urls',namespace='main')),#主页面
     url(r'^note',include('note.urls',namespace='note')),#笔记
-    # url(r'^users',include('users.urls',namespace='users')),#用户
+    url(r'^users',include('users.urls',namespace='users')),#用户
 ]

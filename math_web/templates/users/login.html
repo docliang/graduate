@@ -3,13 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>login</title>
+    <style>
+        h2 {
+
+        }
+        #log{
+            position: relative;
+            top: 18px;
+        }
+
+    </style>
 </head>
 <body>
-    {% extends "learning_logsss/base.html" %}
+    {% extends "main/base.html" %}
     {% load bootstrap3 %}
 
     {% block header %}
-      <h2>Log in to your account.</h2>
+      <div id="log"><h2>Log in to your account.</h2></div>
     {% endblock header %}
 
     {% block content %}
@@ -20,7 +30,7 @@
             <button name="submit" class="btn btn-primary">log in</button>
           {% endbuttons %}
 
-          <input type="hidden" name="next" value="{% url 'learning_logsss:index' %}" />
+          <input type="hidden" name="next" value="{% url "main:home" %}" />
         </form>
     {% endblock content %}
 </body>

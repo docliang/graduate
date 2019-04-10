@@ -41,6 +41,8 @@ INSTALLED_APPS = [
     'users',
     'main',
     'note',
+    'bbs',
+    'goods',
     #第三方应用
     'bootstrap3',
 ]

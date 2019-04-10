@@ -5,7 +5,7 @@
     <title>topics</title>
 </head>
 <body>
-    {% extends 'learning_logsss/base.html' %}
+    {% extends 'note/base.html' %}
     {% block header %}
         <h1>所有主题：</h1>
     {% endblock header %}
@@ -15,14 +15,14 @@
             {% for topic in topics %}
               <li>
                 <h3>
-                    <a href="{% url 'learning_logsss:topic' topic.id %}">{{ topic }}</a>
+                    <a href="{% url 'note:topic' topic.id %}">{{ topic }}</a>
                 </h3>
               </li>
             {% empty %}
                 <li>未曾添加主题</li>
             {% endfor %}
         </ul>
-        <h3><a href="{% url 'learning_logsss:new_topic' %}">添加新主题</a></h3>
+        <h3><a href="{% url 'note:new_topic' %}">添加新主题</a></h3>
     {% endblock content %}
 </body>
 </html>

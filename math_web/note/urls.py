@@ -1,4 +1,4 @@
-'''定义learning_logsss的URL模式'''
+'''定义note的URL模式'''
 from django.conf.urls import url
 from . import views
 urlpatterns = [
