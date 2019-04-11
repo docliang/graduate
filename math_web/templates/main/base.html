@@ -9,7 +9,7 @@
     {% bootstrap_css %}
     {% bootstrap_javascript %}
     <style>
-        
+
     </style>
 </head>
 <body>
@@ -20,8 +20,8 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" style="">
-        <a class="navbar-brand" href="{% url "main:home" %}">
-        <img alt="Brand" src="{% static "main/image/logo.png" %}" >
+        <a class="navbar-brand" href="{% url "main:home" %}" style="padding: 10px">
+        <img alt="Brand" src="{% static "main/image/logo.png" %}">
         </a>
     </div>
 
@@ -36,7 +36,13 @@
             <li><a href="#">数据结构与算法</a></li>
           </ul>
         </li>
-          <li><a href="{% url "note:index" %}"><span class="glyphicon glyphicon-pencil"></span>  我的笔记</a></li>
+          <li>
+              {% if user.is_authenticated %}
+              <a href="{% url "note:index" %}"><span class="glyphicon glyphicon-pencil"></span>  我的笔记</a>
+              {% else %}
+              <a href="{% url "users:login" %}"><span class="glyphicon glyphicon-pencil"></span>  我的笔记</a>
+              {% endif %}
+          </li>
         <li><a href="#"><span class="glyphicon glyphicon-book"></span>  图书推荐</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-download-alt"></span>  资料下载</a></li>
       </ul>
@@ -64,6 +70,8 @@
   </div><!-- /.container-fluid -->
 </nav>
 {#导航结束#}
+
+
 <div class="container">
       <div class="page-header">
         {% block header %}{% endblock header %}
@@ -72,6 +80,24 @@
         {% block content %}{% endblock content %}
       </div>
 </div>
+
+{#底部开始#}
+<nav class="navbar navbar-default navbar-fixed-bottom navbar-inverse">
+
+  <div  style="color: white;margin: 0 440px;padding: 20px 40px">
+   <div style="float: left;font-size: large;padding-bottom: 15px">Email:yugekaoyan@gmail.com</div>
+
+   <div style="float: right;font-size: large">
+       ©
+       <!-- -->
+       2019
+       <!-- -->
+       mathclub. All rights reserved.
+   </div>
+
+  </div>
+</nav>
+{#底部结束#}
 
 </body>
 </html>

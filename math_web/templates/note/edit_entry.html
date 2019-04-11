@@ -5,7 +5,7 @@
     <title>edit_entry</title>
 </head>
 <body>
-    {% extends "note/edit_entry.html" %}
+    {% extends "note/base.html" %}
     {% block content %}
         <p><a href="{% url 'note:topic' topic.id%}">{{ topic }}</a></p>
         <p>Edit entry:</p>

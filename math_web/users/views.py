@@ -30,3 +30,6 @@ def register(request):
     context = {'form':form}
     return render(request,'users/register.html',context)
 
+def profile(request):
+    '''显示个人中心'''
+    return render(request,'users/profile.html')

@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 #欢迎页面
-
 def welcome(request):
     return render(request,'main/welcome.html')
 
