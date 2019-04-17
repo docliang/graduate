@@ -19,6 +19,10 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', admin.site.urls),#后台
     url(r'^',include('main.urls',namespace='main')),#主页面
-    url(r'^note',include('note.urls',namespace='note')),#笔记
-    url(r'^users',include('users.urls',namespace='users')),#用户
+    url(r'^note/',include('note.urls',namespace='note')),#笔记
+    url(r'^users/',include('users.urls',namespace='users')),#用户
+    url(r'^tinymce/',include('tinymce.urls')),#富文本编辑器
+    url(r'^bbs/',include('bbs.urls',namespace='bbs')),#论坛
+    url(r'^comments/', include('django_comments.urls',namespace='comments')),#评论
+    url(r'^goods/$',include('goods.urls',namespace='goods')),#商品
 ]

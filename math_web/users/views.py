@@ -25,7 +25,7 @@ def register(request):
             #让用户自动登陆，再重定向到主页
             authenticated_user = authenticate(username=new_user.username,password=request.POST['password1'])
             login(request,authenticated_user)
-            return HttpResponseRedirect(reverse('note:index'))
+            return HttpResponseRedirect(reverse('main:home'))
 
     context = {'form':form}
     return render(request,'users/register.html',context)
@@ -33,3 +33,5 @@ def register(request):
 def profile(request):
     '''显示个人中心'''
     return render(request,'users/profile.html')
+
+

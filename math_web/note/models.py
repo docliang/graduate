@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from tinymce.models import HTMLField
 # Create your models here.
 class Topic(models.Model):
     '''用户学习的主题'''
@@ -23,4 +24,3 @@ class Entry(models.Model):
     def __str__(self):
         '''返回模型的字符串表示'''
         return self.text[:50] + '...'
-

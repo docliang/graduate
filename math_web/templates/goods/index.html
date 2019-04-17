@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        .top {
+            background: red;
+        }
+        .base {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+{% extends "main/base.html" %}
+{% block header %}
+    <h2>经典图书推荐</h2>
+{% endblock %}
+
+{% block content %}
+    <div class="top">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+
+    <div class="base">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+{% endblock %}
+</body>
+</html>

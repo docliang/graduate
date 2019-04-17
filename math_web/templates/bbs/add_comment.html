@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add comment</title>
+</head>
+<body>
+{% extends 'main/base.html' %}
+{% load comments %}
+<h4>新的评论</h4>
+{% get_comment_form for bbs_obj as form%}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<form id="comment_form"
+      class="form-horizontal"
+      action="{% comment_form_target %}"
+      method="post"
+>
+    {% csrf_token %}
+
+    {# 必须的字段 #}
+    {{ blog_form.object_pk }}
+    {{ blog_form.content_type }}
+    {{ blog_form.timestamp }}
+    {{ blog_form.site }}
+    {{ blog_form.submit_date }}
+    {{ blog_form.security_hash }}
+
+    <input type="hidden" name="next" value="">
+    <input type="" value="" id="">
+
+
+
+ </form>
+{% endblock %}
+</body>
+</html>

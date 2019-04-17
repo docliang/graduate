@@ -6,9 +6,10 @@ from .models import Topic,Entry
 from .forms import TopicForm,EntryForm
 
 # Create your views here.
+@login_required()
 def index(request):
     '''学习笔记的主页'''
-    return render(request,'note/index.html')
+    return render(request, 'note/../templates/goods/index.html')
 
 @login_required
 def topics(request):

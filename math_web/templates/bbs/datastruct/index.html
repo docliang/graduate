@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'main/base.html' %}
+{% block header %}
+    <h2>数据结构</h2>
+    <a href="{% url "bbs:publish_ds" %}">我要发帖</a>
+
+{% endblock %}
+
+{% block content %}
+
+    {% for topic in topic_list %}
+        <a href="{% url "bbs:ds_detail" topic.id %}">{{ topic.title }}</a>
+        <br>
+        {{ topic.summary }}
+        <hr>
+    {% endfor%}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+</head>
+<body>
+{% extends "main/base.html" %}
+{% load comments %}
+{% block header%}
+    <h4>{{ article.title }}</h4>
+{% endblock %}
+{% block content %}
+    {{ article.content|safe }}
+    <hr>
+    {% render_comment_list for article %}
+{% endblock %}
+</body>
+</html>

@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'django.contrib.sites',
+    'django_comments',
     #我的应用
     'users',
     'main',
@@ -45,7 +48,11 @@ INSTALLED_APPS = [
     'goods',
     #第三方应用
     'bootstrap3',
+    'tinymce',
+
 ]
+
+SITE_ID = 1
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -137,4 +144,13 @@ STATICFILES_DIRS =[
 #django-bootstrap3的设置
 BOOTSTRAP3 = {
     'include_jquery':True,
+}
+
+#tinymce(富文本编辑器)设置
+
+TINYMCE_DEFAULT_CONFIG = {
+    'theme':'advanced',
+    'width':'600',
+    'height':'400',
+
 }

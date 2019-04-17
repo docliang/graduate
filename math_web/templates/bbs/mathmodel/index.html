@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'main/base.html' %}
+{% block header %}
+    <h2>数学建模</h2>
+    <a href="{% url "bbs:publish_mm" %}">我要发帖</a>
+
+{% endblock %}
+
+{% block content %}
+
+    {% for topic in topic_list %}
+        <a href="{% url "bbs:mm_detail" topic.id %}">{{ topic.title }}</a>
+        <br>
+        {{ topic.summary }}
+        <hr>
+    {% endfor%}
+{% endblock %}
+</body>
+</html>

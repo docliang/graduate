@@ -13,7 +13,7 @@
             {% bootstrap_form form %}
 {#            {{ form.as_p }}#}
             <button name="submit">注册</button>
-            <input type="hidden" name="next" value="{% url 'main:home' %}" />
+            <input type="hidden" name="next" value="{% url 'users:register' %}" />
         </form>
     {% endblock content %}
 </body>

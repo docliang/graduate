@@ -16,7 +16,7 @@
 {% load static from staticfiles %}
 
 {#导航开始#}
-<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+<nav class="navbar navbar-default navbar-static-top navbar-inverse">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header" style="">
@@ -31,9 +31,9 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-stats"></span>  在线论坛 <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">数学建模</a></li>
-            <li><a href="#">大学数学</a></li>
-            <li><a href="#">数据结构与算法</a></li>
+            <li><a href="{% url "bbs:mathmodel" %}">数学建模</a></li>
+            <li><a href="{% url "bbs:kaoyanmath" %}">考研数学</a></li>
+            <li><a href="{% url "bbs:datastruct" %}">数据结构与算法</a></li>
           </ul>
         </li>
           <li>
@@ -43,7 +43,7 @@
               <a href="{% url "users:login" %}"><span class="glyphicon glyphicon-pencil"></span>  我的笔记</a>
               {% endif %}
           </li>
-        <li><a href="#"><span class="glyphicon glyphicon-book"></span>  图书推荐</a></li>
+        <li><a href="{% url "goods:index" %}"><span class="glyphicon glyphicon-book"></span>  图书推荐</a></li>
         <li><a href="#"><span class="glyphicon glyphicon-download-alt"></span>  资料下载</a></li>
       </ul>
 

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+</head>
+<body>
+{% extends "main/base.html" %}
+{% load comments %}
+{% block header %}
+<h3>{{ article.title }}</h3>
+{% endblock %}
+
+{% block content %}
+    {{ article.content|safe }}
+    <hr>
+    {% render_comment_list for article %}
+    <a href="{% url "bbs:add_comment" %}">我要说两句</a>
+{% endblock %}
+</body>
+</html>
