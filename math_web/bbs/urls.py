@@ -31,5 +31,5 @@ urlpatterns = [
     url(r'^add_comment_test/$',views.add_comment_test,name='add_comment_test'),
 
     url(r'^commit/$',views.commit,name='commit'),
-
+    url(r'^mysearch$',views.mysearch,name='mysearch'),
 ]

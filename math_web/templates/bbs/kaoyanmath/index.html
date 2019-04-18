@@ -16,7 +16,9 @@
     {% for topic in topic_list %}
         <a href="{% url "bbs:ky_detail" topic.id %}">{{ topic.title }}</a>
         <br>
+        {% autoescape off %}
         {{ topic.summary }}
+        {% endautoescape %}
         <hr>
     {% endfor%}
 {% endblock %}

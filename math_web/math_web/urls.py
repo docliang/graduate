@@ -25,4 +25,5 @@ urlpatterns = [
     url(r'^bbs/',include('bbs.urls',namespace='bbs')),#论坛
     url(r'^comments/', include('django_comments.urls',namespace='comments')),#评论
     url(r'^goods/$',include('goods.urls',namespace='goods')),#商品
+    url(r'^search/',include('haystack.urls')),
 ]

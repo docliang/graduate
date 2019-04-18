@@ -12,7 +12,7 @@
 
         .base {
             height: 300px;
-            background-color: blue;
+            background-color: white;
             margin: 30px 0;
 
         }
@@ -39,6 +39,7 @@
             width: 160px;
             float: left;
             margin: 50px 100px;
+        }
 
         #a2 {
             background: black;
@@ -48,41 +49,42 @@
             margin: 50px 100px;
         }
 
-        {##b2 {#}
-        {#    background: orange;#}
-        {#    height: 200px;#}
-        {#    width: 160px;#}
-        {#    float: left;#}
-        {#    margin: 50px 100px;#}
-        {#}#}
-        {##}
-        {##c2 {#}
-        {#    background: green;#}
-        {#    height: 200px;#}
-        {#    width: 160px;#}
-        {#    float: left;#}
-        {#    margin: 50px 100px;#}
-        {#}#}
+        #b2 {
+            background: orange;
+            height: 200px;
+            width: 160px;
+            float: left;
+            margin: 50px 100px;
+        }
+
+        #c2 {
+            background: green;
+            height: 200px;
+            width: 160px;
+            float: left;
+            margin: 50px 100px;
+        }
 
     </style>
 </head>
 <body>
 {% extends "main/base.html" %}
+{% load static from staticfiles %}
 {% block header %}
     <h2>经典图书推荐</h2>
 {% endblock %}
 
 {% block content %}
     <div class="top">
-        <div id="a1"></div>
-        <div id="b1"></div>
-        <div id="c1"></div>
+        <div id="a1"><a href="https://item.jd.com/41490907170.html"><img src="{% static "goods/image/zhangyu.jpg" %}" height="250" width="250"></a></div>
+        <div id="b1"><img src="{% static "goods/image/liner.jpg"%}" height="250" width="250" ></div>
+        <div id="c1"><a href="https://item.jd.com/12370036.html"><img src="{% static "goods/image/math_analy.jpg" %}" height="250" width="200"></a></div>
     </div>
 
     <div class="base">
-        <div id="a2"></div>
-        <div id="b2"></div>
-        <div id="c2"></div>
+        <div id="a2"><img src="{% static "goods/image/compose.jpeg" %}" height="250" width="250"></div>
+        <div id="b2"><img src="{% static "goods/image/datastruct.jpg" %}" height="250" width="250"></div>
+        <div id="c2"><img src="{% static "goods/image/net.jpg" %}" height="250" width="250"></div>
     </div>
 {% endblock %}
 </body>

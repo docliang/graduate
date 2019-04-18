@@ -143,7 +143,9 @@ def commit(request,topic_id):
     return render(request,'bbs/add_comment.html',context)
 
 
-
+#全文检索
+def mysearch(request):
+    return render(request,'bbs/mysearch.html')
 
 
 
