@@ -15,7 +15,12 @@
     {{ article.content|safe }}
     <hr>
     {% render_comment_list for article %}
-    <a href="{% url "bbs:add_comment" %}">我要说两句</a>
+    <form action="{% url "bbs:add_comment"%}" method="post">
+        {% csrf_token %}
+        <textarea name="comment_content"  cols="80" rows="5"></textarea>
+        <input type="hidden" name="topic_id" value="{{ topic_id }}">
+        <input type="submit" value="说一句" id="id_submit">
+    </form>
 {% endblock %}
 </body>
 </html>

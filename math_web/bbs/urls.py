@@ -27,4 +27,9 @@ urlpatterns = [
     #添加新的评论
     url(r'^add_comment/$',views.add_comment,name='add_comment'),
 
+    #添加评论测试版本
+    url(r'^add_comment_test/$',views.add_comment_test,name='add_comment_test'),
+
+    url(r'^commit/$',views.commit,name='commit'),
+
 ]

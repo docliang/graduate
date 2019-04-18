@@ -4,7 +4,9 @@ from .models import *
 from django.http import HttpResponseRedirect
 from django.contrib.auth.models import User
 from django.core.urlresolvers import reverse
-
+from django_comments.models import Comment
+from django.contrib.contenttypes.models import ContentType
+import datetime
 # Create your views here.
 
 
@@ -31,14 +33,14 @@ def datastruct(request):
 def mm_detail(request,topic_id):
     '''显示当前帖子的内容'''
     article = Article.objects.get(id=topic_id)
-    context = {'article':article}
+    context = {'article':article,'topic_id':topic_id}
     return render(request, 'bbs/mathmodel/detail.html', context)
 
 
 def ky_detail(request,topic_id):
     '''显示当前帖子的内容'''
     article = Article.objects.get(id=topic_id)
-    context = { 'article':article }
+    context = { 'article':article,'topic_id':topic_id }
     return render(request, 'bbs/kaoyanmath/detail.html', context)
 
 def ds_detail(request,topic_id):
@@ -83,8 +85,8 @@ def sub_kaoyan(request):
     auth = User.objects.get(username=request.user)
     section = Section.objects.get(id=2)
     Article.objects.create(
-        title = '你好',
-        summary ='hh',
+        title = request.POST.get('title'),
+        summary =request.POST.get('content')[:50],
         content = request.POST.get('content'),
         auth = auth,
         section = section,
@@ -112,11 +114,36 @@ def sub_ds(request):
 
 def add_comment(request):
     '''提交评论'''
-    return render(request,'bbs/add_comment.html')
+    topic_id = request.POST.get('topic_id')
+    comment = request.POST.get('comment_content')
+    Comment.objects.create(
+        content_type_id = 12,
+        object_pk = topic_id,
+        site_id = 1,
+        user = request.user,
+        comment = comment
+    )
+    return HttpResponseRedirect(reverse('bbs:ky_detail',args=[topic_id]))
 
-def save_comment(request):
-    '''保存评论'''
-    pass
+
+
+def add_comment_test(request,topic_id):
+    ''' 添加评论测试版本'''
+    comment = request.POST.get('comment_content')
+    Comment.objects.create(
+        content_type_id = 12,
+        object_pk = topic_id,
+        site_id = 1,
+        user = request.user,
+        comment = comment
+    )
+
+def commit(request,topic_id):
+    context = {'topic_id':topic_id}
+    return render(request,'bbs/add_comment.html',context)
+
+
+
 
 
 

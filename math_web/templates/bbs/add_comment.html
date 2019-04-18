@@ -3,38 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Add comment</title>
+    <script type="text/javascript"
+    src="/static/tiny_mce/tiny_mce.js">
+    </script>
+    <script type="text/javascript">
+        tinyMCE.init({
+            'mode':'textareas',
+            'theme':'advanced',
+            'width':700,
+            'height':300
+        });
+    </script>
 </head>
 <body>
 {% extends 'main/base.html' %}
-{% load comments %}
-<h4>新的评论</h4>
-{% get_comment_form for bbs_obj as form%}
-
 {% block header %}
+    <h4>新的评论</h4>
 {% endblock %}
 
 {% block content %}
-<form id="comment_form"
-      class="form-horizontal"
-      action="{% comment_form_target %}"
-      method="post"
->
+<form action="{% url "bbs:add_comment_test"%}" method="post">
     {% csrf_token %}
+    <textarea name="comment_content"></textarea>
+    <input type="hidden" name="topic_id" value="{{ topic_id }}">
+    {% buttons %}
+        <button name="submit" class="btn btn-primary">发帖</button>
+    {% endbuttons %}
+</form>
 
-    {# 必须的字段 #}
-    {{ blog_form.object_pk }}
-    {{ blog_form.content_type }}
-    {{ blog_form.timestamp }}
-    {{ blog_form.site }}
-    {{ blog_form.submit_date }}
-    {{ blog_form.security_hash }}
-
-    <input type="hidden" name="next" value="">
-    <input type="" value="" id="">
-
-
-
- </form>
 {% endblock %}
 </body>
 </html>

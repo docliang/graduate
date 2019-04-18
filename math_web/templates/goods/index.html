@@ -5,11 +5,65 @@
     <title>index</title>
     <style>
         .top {
-            background: red;
+            height: 300px;
+            background: white;
+            margin: 30px 0;
         }
+
         .base {
+            height: 300px;
             background-color: blue;
+            margin: 30px 0;
+
         }
+
+        #a1 {
+            background: black;
+            height: 200px;
+            width: 160px;
+            float: left;
+            margin: 50px 100px;
+        }
+
+        #b1 {
+            background: orange;
+            height: 200px;
+            width: 160px;
+            float: left;
+            margin: 50px 100px;
+        }
+
+        #c1 {
+            background: green;
+            height: 200px;
+            width: 160px;
+            float: left;
+            margin: 50px 100px;
+
+        #a2 {
+            background: black;
+            height: 200px;
+            width: 160px;
+            float: left;
+            margin: 50px 100px;
+        }
+
+        {##b2 {#}
+        {#    background: orange;#}
+        {#    height: 200px;#}
+        {#    width: 160px;#}
+        {#    float: left;#}
+        {#    margin: 50px 100px;#}
+        {#}#}
+        {##}
+        {##c2 {#}
+        {#    background: green;#}
+        {#    height: 200px;#}
+        {#    width: 160px;#}
+        {#    float: left;#}
+        {#    margin: 50px 100px;#}
+        {#}#}
+
     </style>
 </head>
 <body>
@@ -20,15 +74,15 @@
 
 {% block content %}
     <div class="top">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="a1"></div>
+        <div id="b1"></div>
+        <div id="c1"></div>
     </div>
 
     <div class="base">
-        <div></div>
-        <div></div>
-        <div></div>
+        <div id="a2"></div>
+        <div id="b2"></div>
+        <div id="c2"></div>
     </div>
 {% endblock %}
 </body>

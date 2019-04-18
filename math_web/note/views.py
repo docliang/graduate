@@ -9,7 +9,7 @@ from .forms import TopicForm,EntryForm
 @login_required()
 def index(request):
     '''学习笔记的主页'''
-    return render(request, 'note/../templates/goods/index.html')
+    return render(request, 'note/index.html')
 
 @login_required
 def topics(request):
