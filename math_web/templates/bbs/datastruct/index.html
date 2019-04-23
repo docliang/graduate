@@ -8,7 +8,8 @@
 {% extends 'main/base.html' %}
 {% block header %}
     <h2>数据结构</h2>
-    <a href="{% url "bbs:publish_ds" %}">我要发帖</a>
+    <a href="{% url "bbs:publish_ds"%}" class="btn btn-primary" role="button" style="float: right;margin: -10px;">发帖</a>
+    <br>
 
 {% endblock %}
 
@@ -17,9 +18,25 @@
     {% for topic in topic_list %}
         <a href="{% url "bbs:ds_detail" topic.id %}">{{ topic.title }}</a>
         <br>
+        {% autoescape off %}
         {{ topic.summary }}
+        {% endautoescape %}
         <hr>
     {% endfor%}
+        <nav aria-label="...">
+  <ul class="pagination">
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&laquo;</span>
+      </span>
+    </li>
+    <li class="active">
+      {% for i in topic_list.paginator.page_range %}
+        <a href="{% url "bbs:datastruct" i %}"><span>{{ i }} <span class="sr-only">(current)</span></span></a>
+      {% endfor %}
+    </li>
+  </ul>
+</nav>
 {% endblock %}
 </body>
 </html>

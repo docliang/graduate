@@ -5,10 +5,17 @@
     <title>Title</title>
 </head>
 <body>
+{% load bootstrap3 %}
+{% block content %}
 {% if query %}
     <h3>搜索结果如下</h3>
+    <br>
     {% for result in page.object_list %}
-        <a href="/{{ result.object.id }}/">{{ result.object.gName }}</a><br/>
+        {% autoescape off %}
+            {{ result.object.title}}
+        {{ result.object.content }}
+        {% endautoescape %}
+        <hr>
     {% empty %}
         <p>啥也没找到</p>
     {% endfor %}
@@ -30,6 +37,7 @@
         </div>
     {% endif %}
 {% endif %}
+{% endblock %}
 
 </body>
 </html>

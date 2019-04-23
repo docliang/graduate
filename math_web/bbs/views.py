@@ -1,3 +1,4 @@
+#coding=utf-8
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 from .models import *
@@ -7,24 +8,33 @@ from django.core.urlresolvers import reverse
 from django_comments.models import Comment
 from django.contrib.contenttypes.models import ContentType
 import datetime
+from django.core.paginator import *
 # Create your views here.
 
 
-def mathmodel(request):
+def mathmodel(request,topic_id):
     '''显示数学建模版块所有的帖子标题及summary'''
-    topic_list = Article.objects.filter(section=3)
+    list = Article.objects.filter(section=3)
+    paginator = Paginator(list, 6)
+    topic_list = paginator.page(int(topic_id))
     context = {'topic_list':topic_list}
     return render(request, "bbs/mathmodel/index.html", context)
 
-def kaoyanmath(request):
+def kaoyanmath(request,topic_id):
     '''显示考研数学版块所有的帖子标题及summary'''
-    topic_list = Article.objects.filter(section=2)
-    context = {'topic_list':topic_list}
+    # topic_list = Article.objects.filter(section=2)
+    # context = {'topic_list':topic_list}
+    list = Article.objects.filter(section=2)
+    paginator = Paginator(list, 6)
+    topic_list = paginator.page(int(topic_id))
+    context = {'topic_list': topic_list}
     return render(request, "bbs/kaoyanmath/index.html", context)
 
-def datastruct(request):
+def datastruct(request,topic_id):
     '''显示数据结构与算法版块所有的帖子标题及summary'''
-    topic_list = Article.objects.filter(section=4)
+    list = Article.objects.filter(section=4)
+    paginator = Paginator(list, 6)
+    topic_list = paginator.page(int(topic_id))
     context = {'topic_list':topic_list}
     return render(request, "bbs/datastruct/index.html", context)
 
@@ -46,7 +56,7 @@ def ky_detail(request,topic_id):
 def ds_detail(request,topic_id):
     '''显示当前帖子的内容'''
     article = Article.objects.get(id=topic_id)
-    context = {'article':article}
+    context = {'article':article,'topic_id':topic_id}
     return render(request,'bbs/datastruct/detail.html',context)
 
 
@@ -67,21 +77,22 @@ def publish_ds(request):
 
 def sub_mm(request):
     '''保存数学建模帖子'''
+    topic_id = 1
     auth = User.objects.get(username=request.user)
     section = Section.objects.get(id=3)
     Article.objects.create(
-        title = 'hhh',
-        summary ='hh',
-        content = request.POST.get('content'),
-        auth = auth,
-        section = section,
-        view_count = 1,
-
+        title=request.POST.get('title'),
+        summary=request.POST.get('content')[:50],
+        content=request.POST.get('content'),
+        auth=auth,
+        section=section,
+        view_count=1,
     )
-    return HttpResponseRedirect(reverse('bbs:mathmodel'))
+    return HttpResponseRedirect(reverse('bbs:mathmodel',args=[topic_id]))
 
 def sub_kaoyan(request):
     '''保存考研数学帖子'''
+    topic_id = 1
     auth = User.objects.get(username=request.user)
     section = Section.objects.get(id=2)
     Article.objects.create(
@@ -93,24 +104,25 @@ def sub_kaoyan(request):
         view_count = 1,
 
     )
-    return HttpResponseRedirect(reverse('bbs:kaoyanmath'))
+    return HttpResponseRedirect(reverse('bbs:kaoyanmath',args=[topic_id]))
 
 
 def sub_ds(request):
     '''保存数据结构帖子'''
+    topic_id = 1
     auth = User.objects.get(username=request.user)
     section = Section.objects.get(id=4)
     Article.objects.create(
-        title = 'hhh',
-        summary ='hh',
-        content = request.POST.get('content'),
-        auth = auth,
-        section = section,
-        view_count = 1,
+        title=request.POST.get('title'),
+        summary=request.POST.get('content')[:50],
+        content=request.POST.get('content'),
+        auth=auth,
+        section=section,
+        view_count=1,
 
     )
 
-    return HttpResponseRedirect(reverse('bbs:datastruct'))
+    return HttpResponseRedirect(reverse('bbs:datastruct',args=[topic_id]))
 
 def add_comment(request):
     '''提交评论'''

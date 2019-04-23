@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="26d408cd-3745-4900-9f75-71ed2777fd83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/math_web/bbs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/bbs/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/math_web/bbs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/bbs/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_web/main/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/main/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_web/main/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/main/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_web/math_web/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/math_web/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_web/math_web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/math_web/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/datastruct/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/datastruct/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/datastruct/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/datastruct/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/datastruct/publish_datastruct.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/datastruct/publish_datastruct.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_web/templates/goods/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/goods/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/publish_kaoyanmath.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/publish_kaoyanmath.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/publish_mathmodel.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/publish_mathmodel.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/bbs/mysearch.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/bbs/mysearch.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/main/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/search/indexes/bbs/Article_text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/search/indexes/bbs/article_text.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/templates/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/whoosh_index/MAIN_wlozdf8uphvkqn2l.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/math_web/whoosh_index/_MAIN_1.toc" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,22 +47,89 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math_web/math_web/urls.py">
+        <entry file="file://$PROJECT_DIR$/math_web/bbs/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="504">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="-916">
+              <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math_web/bbs/search_indexes.py">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mathmodel/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="14" selection-start-column="14" selection-end-column="14" />
+            <state relative-caret-position="666">
+              <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
               <folding>
-                <element signature="e#0#28#0" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#650#657#1#HTML" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/datastruct/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="324">
+              <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mathmodel/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/datastruct/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/datastruct/publish_datastruct.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mathmodel/publish_mathmodel.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+              <folding>
+                <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="14" lean-forward="true" selection-start-line="10" selection-end-line="13" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="67">
+              <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -60,78 +137,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/math_web/bbs/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+            <state relative-caret-position="252">
+              <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math_web/bbs/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="631">
-              <caret line="147" column="44" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mysearch.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/math_web/templates/search/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="32" selection-start-line="32" selection-end-line="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/ChineseAnalyzer.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/whoosh_cn_backend.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
-              <folding>
-                <element signature="e#19#101#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/math_web/math_web/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="169" column="35" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/whoosh_backend.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -145,6 +154,9 @@
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>analyzer</find>
+    </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
@@ -178,27 +190,37 @@
         <option value="$PROJECT_DIR$/math_web/users/views.py" />
         <option value="$PROJECT_DIR$/math_web/note/views.py" />
         <option value="$PROJECT_DIR$/math_web/templates/goods/index.html" />
-        <option value="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/index.html" />
         <option value="$PROJECT_DIR$/math_web/math_web/urls.py" />
         <option value="$PROJECT_DIR$/math_web/main/urls.py" />
         <option value="$PROJECT_DIR$/math_web/main/views.py" />
+        <option value="$PROJECT_DIR$/math_web/bbs/search_indexes.py" />
+        <option value="$PROJECT_DIR$/math_web/math_web/settings.py" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/mysearch.html" />
         <option value="$PROJECT_DIR$/math_web/templates/search/indexes/bbs/Article_text.txt" />
-        <option value="$PROJECT_DIR$/math_web/templates/search/search.html" />
         <option value="$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/ChineseAnalyzer.py" />
         <option value="$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/whoosh_cn_backend.py" />
-        <option value="$PROJECT_DIR$/math_web/bbs/search_indexes.py" />
-        <option value="$PROJECT_DIR$/math_web/bbs/urls.py" />
+        <option value="$PROJECT_DIR$/math_web/templates/search/indexes/bbs/article_text.txt" />
+        <option value="$PROJECT_DIR$/math_web/templates/search/search.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/index.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/main/base.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/detail.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/datastruct/publish_datastruct.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/publish_kaoyanmath.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/publish_mathmodel.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/datastruct/index.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/index.html" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/mathmodel/detail.html" />
         <option value="$PROJECT_DIR$/math_web/bbs/views.py" />
-        <option value="$PROJECT_DIR$/math_web/templates/bbs/mysearch.html" />
-        <option value="$PROJECT_DIR$/math_web/math_web/settings.py" />
+        <option value="$PROJECT_DIR$/math_web/bbs/urls.py" />
+        <option value="$PROJECT_DIR$/math_web/templates/bbs/datastruct/detail.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1200" />
+    <option name="x" value="319" />
     <option name="y" value="23" />
-    <option name="width" value="720" />
-    <option name="height" value="1027" />
+    <option name="width" value="1601" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -208,6 +230,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,12 +253,6 @@
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
               <item name="graduate" type="462c0819:PsiDirectoryNode" />
               <item name="math_web" type="462c0819:PsiDirectoryNode" />
-              <item name="math_web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="graduate" type="462c0819:PsiDirectoryNode" />
-              <item name="math_web" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -249,77 +266,37 @@
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
               <item name="graduate" type="462c0819:PsiDirectoryNode" />
               <item name="math_web" type="462c0819:PsiDirectoryNode" />
-              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="datastruct" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="math_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="kaoyanmath" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="math_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="bbs" type="462c0819:PsiDirectoryNode" />
+              <item name="mathmodel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="python3.7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="python3.7" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="python3.7" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="python3.7" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="python3.7" type="462c0819:PsiDirectoryNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="haystack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="haystack" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="graduate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; Python 3.7 (test1) &gt;" type="70bed36:NamedLibraryElementNode" />
-              <item name="site-packages" type="462c0819:PsiDirectoryNode" />
-              <item name="haystack" type="462c0819:PsiDirectoryNode" />
-              <item name="backends" type="462c0819:PsiDirectoryNode" />
+              <item name="graduate" type="462c0819:PsiDirectoryNode" />
+              <item name="math_web" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -396,18 +373,22 @@
       <workItem from="1554727924274" duration="3935000" />
       <workItem from="1554739723023" duration="28000" />
       <workItem from="1554786201789" duration="17250000" />
-      <workItem from="1555567148140" duration="11638000" />
+      <workItem from="1555567148140" duration="12175000" />
+      <workItem from="1555635336509" duration="126000" />
+      <workItem from="1555895141566" duration="1705000" />
+      <workItem from="1555913983251" duration="3970000" />
+      <workItem from="1555979349965" duration="10588000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35422000" />
+    <option name="totallyTimeSpent" value="52348000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="984" y="23" width="936" height="1027" extended-state="0" />
+    <frame x="319" y="23" width="1601" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.37248322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15009622" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -418,7 +399,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32908705" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32941177" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.32894737" />
@@ -434,35 +415,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/math_web/math_web/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/math_web/wsgi.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/math_web/static/image/c8.jpg" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="2" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/note/templates/base.html" />
-    <entry file="file://$PROJECT_DIR$/math_web/note/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/math_web/note/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -530,25 +482,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/main/welcome.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/math_web/templates/users/login.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/main/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/math_web/users/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -570,38 +505,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mathmodel/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/add_comment.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="29" lean-forward="true" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/add_comment.html" />
     <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/add_comment.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/main/base.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -615,13 +523,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1620">
           <caret line="90" column="7" selection-start-line="90" selection-start-column="7" selection-end-line="90" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -662,97 +563,189 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/whoosh_backend.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/math_web/bbs/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="324">
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/search/indexes/bbs/Article_text.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/search/search.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/ChineseAnalyzer.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="19" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="108">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/whoosh_backend.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/test1/lib/python3.7/site-packages/haystack/backends/whoosh_cn_backend.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="25" column="44" selection-start-line="25" selection-start-column="44" selection-end-line="25" selection-end-column="44" />
+        <state relative-caret-position="250">
+          <caret line="134" column="46" lean-forward="true" selection-start-line="134" selection-start-column="46" selection-end-line="134" selection-end-column="46" />
           <folding>
             <element signature="e#19#101#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/bbs/search_indexes.py">
+    <entry file="file://$PROJECT_DIR$/math_web/templates/main/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="14" selection-start-column="14" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="324">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/bbs/views.py">
+    <entry file="file://$PROJECT_DIR$/math_web/templates/main/welcome.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="631">
-          <caret line="147" column="44" selection-start-line="147" selection-start-column="44" selection-end-line="147" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mysearch.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/math_web/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/math_web/bbs/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="34" column="1" lean-forward="true" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+        <state relative-caret-position="126">
+          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/math_web/math_web/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="169" column="35" selection-start-line="169" selection-start-column="35" selection-end-line="169" selection-end-column="35" />
+        <state relative-caret-position="936">
+          <caret line="52" column="15" selection-start-line="52" selection-start-column="15" selection-end-line="52" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/bbs/search_indexes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#15#43#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/search/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="738">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/search/indexes/bbs/article_text.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="20" selection-start-column="20" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mysearch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="53" lean-forward="true" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/math_web/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="468">
+          <caret line="27" column="20" selection-start-line="27" selection-start-column="20" selection-end-line="27" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/main/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/publish_kaoyanmath.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="32" column="7" lean-forward="true" selection-start-line="21" selection-end-line="32" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mathmodel/publish_mathmodel.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" column="51" lean-forward="true" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#input#0;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mathmodel/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="666">
+          <caret line="37" column="7" lean-forward="true" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#650#657#1#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/mathmodel/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/datastruct/publish_datastruct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="25" column="29" lean-forward="true" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/datastruct/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="37" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="67">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/bbs/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-916">
+          <caret line="32" column="33" lean-forward="true" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/bbs/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/kaoyanmath/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="14" lean-forward="true" selection-start-line="10" selection-end-line="13" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/math_web/templates/bbs/datastruct/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

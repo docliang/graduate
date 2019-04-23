@@ -8,7 +8,9 @@
 {% extends "main/base.html" %}
 {% load comments %}
 {% block header %}
-<h3>{{ article.title }}</h3>
+<div class="jumbotron">
+        <h3>{{ article.title }}</h3>
+    </div>
 {% endblock %}
 
 {% block content %}

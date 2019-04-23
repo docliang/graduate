@@ -19,9 +19,10 @@
 {% extends 'main/base.html'%}
 {% load bootstrap3 %}
 {% block content %}
-<form method="post" action="{% url "bbs:sub_ds" %}">
+    <form method="post" action="{% url "bbs:sub_ds" %}">
     {% csrf_token %}
     <br>
+    帖子标题：<input type="text" name="title" style="margin: 20px 0;">
     <textarea name="content">
 
     </textarea>

@@ -9,7 +9,12 @@
 {% load bootstrap3 %}
 {% block header %}
     <h2>考研数学</h2>
-    <a href="{% url "bbs:publish_kaoyan" %}">我要发帖</a>
+{#    {% buttons %}#}
+{#    <button class="btn btn-default" type="submit" style="float: right;margin: -10px;"><a href="{% url "bbs:publish_kaoyan" %}" style="text-decoration: none" >我要发帖</a>#}
+{#    </button>#}
+{#    {% endbuttons %}#}
+    <a href="{% url "bbs:publish_kaoyan"%}" class="btn btn-primary" role="button" style="float: right;margin: -10px;">发帖</a>
+    <br>
 {% endblock %}
 {% block content %}
 
@@ -21,6 +26,23 @@
         {% endautoescape %}
         <hr>
     {% endfor%}
+    <nav aria-label="...">
+  <ul class="pagination">
+    <li class="disabled">
+      <span>
+        <span aria-hidden="true">&laquo;</span>
+      </span>
+    </li>
+    <li class="active">
+      {% for i in topic_list.paginator.page_range %}
+        <a href="{% url "bbs:kaoyanmath" i %}"><span>{{ i }} <span class="sr-only">(current)</span></span></a>
+      {% endfor %}
+    </li>
+  </ul>
+</nav>
+{#    {% for i in topic_list.paginator.page_range %}#}
+{#        <a href="{% url "bbs:kaoyanmath" i %}">{{ i }}</a>#}
+{#    {% endfor %}#}
 {% endblock %}
 
 </body>
