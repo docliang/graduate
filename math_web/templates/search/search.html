@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+{% extends 'main/base.html' %}
 {% load bootstrap3 %}
 {% block content %}
 {% if query %}
@@ -12,7 +13,6 @@
     <br>
     {% for result in page.object_list %}
         {% autoescape off %}
-            {{ result.object.title}}
         {{ result.object.content }}
         {% endautoescape %}
         <hr>
