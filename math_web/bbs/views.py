@@ -41,20 +41,20 @@ def datastruct(request,topic_id):
 
 
 def mm_detail(request,topic_id):
-    '''显示当前帖子的内容'''
+    '''显示数学建模论坛帖子的内容'''
     article = Article.objects.get(id=topic_id)
     context = {'article':article,'topic_id':topic_id}
     return render(request, 'bbs/mathmodel/detail.html', context)
 
 
 def ky_detail(request,topic_id):
-    '''显示当前帖子的内容'''
+    '''显示考研数学论坛帖子的内容'''
     article = Article.objects.get(id=topic_id)
     context = { 'article':article,'topic_id':topic_id }
     return render(request, 'bbs/kaoyanmath/detail.html', context)
 
 def ds_detail(request,topic_id):
-    '''显示当前帖子的内容'''
+    '''显示数据结构论坛帖子的内容'''
     article = Article.objects.get(id=topic_id)
     context = {'article':article,'topic_id':topic_id}
     return render(request,'bbs/datastruct/detail.html',context)
