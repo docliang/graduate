@@ -33,5 +33,4 @@
 31. 你们总是讲出让我吃惊的答案，你们耗
 
 ----------------------------------2019年5月6日-------------------------------------------
-好吧。我们终于毕业了。。。。
 ![image](https://github.com/docliang/graduate/raw/master/math_web/static/main/image/graduate.jpg)
