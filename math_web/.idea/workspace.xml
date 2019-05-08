@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41397bb7-b12f-4c95-94f6-fb2e7ac0e54f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbs/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/bbs/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bbs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/bbs/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/math_web/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/math_web/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/main/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/main/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/search/indexes/bbs/article_text.txt" beforeDir="false" afterPath="$PROJECT_DIR$/templates/search/indexes/bbs/article_text.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_18.toc" beforeDir="false" />
-    </list>
+    <list default="true" id="41397bb7-b12f-4c95-94f6-fb2e7ac0e54f" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +129,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/main/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+            <state relative-caret-position="360">
+              <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -369,12 +360,12 @@
       <workItem from="1556781255026" duration="17000" />
       <workItem from="1556878224673" duration="1297000" />
       <workItem from="1557155052017" duration="306000" />
-      <workItem from="1557306711180" duration="3599000" />
+      <workItem from="1557306711180" duration="3905000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85787000" />
+    <option name="totallyTimeSpent" value="86093000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="52" y="23" width="1628" height="1027" extended-state="6" />
@@ -778,8 +769,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/main/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="82" column="24" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
+        <state relative-caret-position="360">
+          <caret line="81" column="6" lean-forward="true" selection-start-line="81" selection-start-column="6" selection-end-line="81" selection-end-column="6" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
