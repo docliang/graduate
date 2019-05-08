@@ -34,4 +34,4 @@
 
 ----------------------------------2019年5月6日-------------------------------------------
 好吧。我们终于毕业了。。。。
-![image](https://github.com/docliang/graduate/raw/master/static/main/image/graduate.jpg)
+![image](https://github.com/docliang/graduate/raw/master/math_web/static/main/image/graduate.jpg)
