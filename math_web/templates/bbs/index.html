@@ -8,11 +8,14 @@
 {% extends 'main/base.html' %}
 {% load bootstrap3 %}
 {% block header %}
-    <h2>数学建模</h2>
-    <a href="{% url "bbs:publish_mm"%}" class="btn btn-primary" role="button" style="float: right;margin: -10px;">发帖</a>
+    <h2>{{ section_name }}</h2>
+{#    {% buttons %}#}
+{#    <button class="btn btn-default" type="submit" style="float: right;margin: -10px;"><a href="{% url "bbs:publish_kaoyan" %}" style="text-decoration: none" >我要发帖</a>#}
+{#    </button>#}
+{#    {% endbuttons %}#}
+    <a href="{% url "bbs:publish" section_id %}" class="btn btn-primary" role="button" style="float: right;margin: -10px;">发帖</a>
     <br>
 {% endblock %}
-
 {% block content %}
 
     {% for topic in topic_list %}
@@ -32,11 +35,15 @@
     </li>
     <li class="active">
       {% for i in topic_list.paginator.page_range %}
-        <a href="{% url "bbs:mathmodel" i %}"><span>{{ i }} <span class="sr-only">(current)</span></span></a>
+        <a href="{% url "bbs:index" section_id i %}"><span>{{ i }} <span class="sr-only">(current)</span></span></a>
       {% endfor %}
     </li>
   </ul>
 </nav>
+{#    {% for i in topic_list.paginator.page_range %}#}
+{#        <a href="{% url "bbs:kaoyanmath" i %}">{{ i }}</a>#}
+{#    {% endfor %}#}
 {% endblock %}
+
 </body>
 </html>

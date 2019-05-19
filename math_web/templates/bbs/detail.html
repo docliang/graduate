@@ -5,13 +5,14 @@
     <title>detail</title>
 </head>
 <body>
-{% extends "bbs/base.html" %}
+{% extends "main/base.html" %}
 {% load comments %}
 
 {% block header %}
 <div class="jumbotron">
         <h3>{{ article.title }}</h3>
-    </div>
+        <h4 style="float: right">{{ auth }}</h4>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -23,7 +24,7 @@
         <input type="hidden" name="topic_id" value="{{ topic_id }}">
         <input type="submit" value="说一句" id="id_submit">
     </form>
-
+    <div style="height: 100px"></div>
 {% endblock %}
 </body>
 </html>

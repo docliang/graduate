@@ -6,6 +6,19 @@
 </head>
 <body>
 {% extends "main/base.html" %}
+{% load static %}
+{% block header %}
 
+{% endblock %}
+{% block content %}
+<p>用户名：{{ name }}</p>
+    <hr>
+    <p>你所发送的主题贴：</p>
+{% for i in content %}
+    <a href="{% url "bbs:detail" i.id %}">{{ i.title }}</a>
+    <br>
+{% endfor %}
+    <hr>
+{% endblock %}
 </body>
 </html>

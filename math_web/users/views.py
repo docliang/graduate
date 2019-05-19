@@ -3,7 +3,8 @@ from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 from django.contrib.auth import login,logout,authenticate
 from django.contrib.auth.forms import UserCreationForm
-
+from django_comments.models import Comment
+from bbs.models import Article
 # Create your views here.
 
 def logout_view(request):
@@ -32,6 +33,12 @@ def register(request):
 
 def profile(request):
     '''显示个人中心'''
-    return render(request,'users/profile.html')
+    name = request.user
+    # comment = Comment.objects.get(user_id = request.user.id)
+    content = Article.objects.filter(auth_id = request.user.id)
+    # article_id = Article.objects.values('id').filter(auth_id = request.user.id)
+    context = {'name':name,'content':content}
+    return render(request,'users/profile.html',context)
+
 
 

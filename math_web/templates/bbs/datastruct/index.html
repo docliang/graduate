@@ -16,7 +16,7 @@
 {% block content %}
 
     {% for topic in topic_list %}
-        <a href="{% url "bbs:ds_detail" topic.id %}">{{ topic.title }}</a>
+        <a href="{% url "bbs:detail" topic.id %}">{{ topic.title }}</a>
         <br>
         {% autoescape off %}
         {{ topic.summary }}

@@ -13,13 +13,13 @@
 {#    <button class="btn btn-default" type="submit" style="float: right;margin: -10px;"><a href="{% url "bbs:publish_kaoyan" %}" style="text-decoration: none" >我要发帖</a>#}
 {#    </button>#}
 {#    {% endbuttons %}#}
-    <a href="{% url "bbs:publish_kaoyan"%}" class="btn btn-primary" role="button" style="float: right;margin: -10px;">发帖</a>
+    <a href="{% url "bbs:publish" %}" class="btn btn-primary" role="button" style="float: right;margin: -10px;">发帖</a>
     <br>
 {% endblock %}
 {% block content %}
 
     {% for topic in topic_list %}
-        <a href="{% url "bbs:ky_detail" topic.id %}">{{ topic.title }}</a>
+        <a href="{% url "bbs:detail" topic.id %}">{{ topic.title }}</a>
         <br>
         {% autoescape off %}
         {{ topic.summary }}
